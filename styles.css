@@ -467,13 +467,14 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box -shadow 0.3s ease;
 }
 
 /* Hover Effect */
 .about-card:hover {
   transform: scale(1.05);
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); */
+  box-shadow: none;
 }
 
 /* Section Rounding and Spacing */
