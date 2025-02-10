@@ -689,7 +689,6 @@ footer {
   }
 }
 
-
 /* About Sections Wrapper */
 .about-sections-wrapper {
   display: flex;
@@ -714,6 +713,7 @@ footer {
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* Profile layout */
@@ -725,27 +725,31 @@ footer {
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .profile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 8px;
 }
 
 /* Career services logo */
 .logo-container {
-  width: 150px;
+  width: 100%;
+  max-width: 250px;
   margin: 0 auto 2rem;
 }
 
 .logo-container img {
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 /* Carousel controls */
@@ -756,6 +760,14 @@ footer {
 #esaCarousel .carousel-control-prev,
 #esaCarousel .carousel-control-next {
   width: 10%;
+  filter: invert(1);
+}
+
+#esaCarousel .carousel-control-prev-icon,
+#esaCarousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  padding: 10px;
 }
 
 /* Responsive design */
@@ -765,6 +777,7 @@ footer {
   }
   
   .about-card .card-body {
+    flex-direction: column;
     text-align: center;
   }
   
