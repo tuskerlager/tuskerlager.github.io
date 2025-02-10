@@ -33,8 +33,10 @@
     <header class="bg-darker-green py-3 shadow-sm">
       <nav class="container d-flex justify-content-between align-items-center">
         <!-- prettier-ignore -->
-        <div class="logo"><img src="./img/esa-logo.jpg" alt="ESA LOGO" class="img-fluid" style="height: 70px" /></div>
+        <div class="logo"><img src="./logo/esa-bnw-0.png" alt="ESA LOGO" class="img-fluid" style="height: 70px" /></div>
+        <div class="logo"><img src="./logo/tgc.png" alt="TGC LOGO" class="img-fluid" style="height: 70px" /></div>
         <div class="nav-links d-flex gap-3">
+          <!-- prettier-ignore -->
           <a href="#registration" class="text-ivory text-decoration-none">Register</a>
           <a href="#contact" class="text-ivory text-decoration-none">Contact</a>
         </div>
@@ -126,102 +128,194 @@
     <!-- End of about the-->
 
     <!-- Chancellors message -->
-    <section class="container my-5 chancellor-agenda">
+    <section class="container my-5 leadership-slider">
       <div class="corner-decoration top-left"></div>
       <div class="corner-decoration bottom-right"></div>
-      <div class="row align-items-center">
-        <!-- prettier-ignore -->
-        <span class="floating-doodle doodle-1" style="top: 15%; left: 8%">●</span>
-        <!-- prettier-ignore -->
-        <span class="floating-doodle doodle-2" style="top: 25%; right: 12%">✦</span>
-        <!-- prettier-ignore -->
-        <span class="floating-doodle doodle-3" style="bottom: 20%; left: 15%">♦</span>
-        <!-- prettier-ignore -->
-        <span class="floating-doodle doodle-4" style="bottom: 30%; right: 18%">○</span>
-
-        <!-- Left: Image Card -->
-        <div class="col-md-5">
-          <div class="card agenda-card">
-            <!-- prettier-ignore -->
-            <img src="./img/chancellor-3.jpg" class="card-img-top" alt="Chancellor"/>
-
-            <div class="card-body text-center">
-              <!-- <h3 class="card-title">Chancellor's Vision</h3> -->
+      
+      <div class="carousel slide" id="leadershipCarousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="2"></button>
+        </div>
+    
+        <div class="carousel-inner">
+          <!-- Chancellor Slide -->
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-md-5">
+                <div class="card agenda-card">
+                  <img src="./img/chancellor-3.jpg" class="card-img-top" alt="Chancellor"/>
+                  <div class="card-body text-center"></div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <h2 class="section-title text-center mb-4">Chancellor's Agenda</h2>
+                <p>Professor Patrick Verkooijen is the current Chancellor of the University of Nairobi. He is the CEO of the Global Center on Adaptation, an international organization that works on climate change. The University of Nairobi's (UoN) Chancellor's agenda, known as the "Big 5," is a five-point plan to transform the university into a leader in education, technology, and entrepreneurship. The agenda includes initiatives to address challenges in Kenya, Africa, and the world, one of the key themes being Green Jobs: The university will work to create jobs in the renewable energy and sustainability sectors.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Vice Chancellor Slide -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-5">
+                <div class="card agenda-card">
+                  <img src="./dsc/un-vc.jpg" class="card-img-top" alt="Vice Chancellor"/>
+                  <div class="card-body text-center"></div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <h2 class="section-title text-center mb-4">Vice Chancellor's Vision</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. The Vice Chancellor leads the university's academic and administrative functions, ensuring excellence in education and research. Their vision encompasses innovative teaching methodologies, research advancement, and sustainable development. Under their leadership, the university has embarked on various initiatives to enhance student experience and promote environmental consciousness through academic programs and research projects.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Deputy Vice Chancellor Slide -->
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-5">
+                <div class="card agenda-card">
+                  <img src="./dsc/Prof Ayub Gitau.jpg" class="card-img-top" alt="Deputy Vice Chancellor"/>
+                  <div class="card-body text-center"></div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <h2 class="section-title text-center mb-4">Deputy Vice Chancellor's Initiative</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. The Deputy Vice Chancellor oversees the implementation of key university policies and programs. Their focus includes strengthening industry partnerships, promoting innovation in teaching and learning, and developing sustainable practices across campus operations. They play a crucial role in advancing the university's commitment to environmental sustainability and green technology adoption.</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Right: Text -->
-        <div class="col-md-7">
-          <h2 class="section-title text-center mb-4">Chancellor's Agenda</h2>
-          <p>
-            Professor Patrick Verkooijen is the current Chancellor of the
-            University of Nairobi. He is the CEO of the Global Center on
-            Adaptation, an international organization that works on climate
-            change. The University of Nairobi's (UoN) Chancellor's agenda, known
-            as the "Big 5," is a five-point plan to transform the university
-            into a leader in education, technology, and entrepreneurship. The
-            agenda includes initiatives to address challenges in Kenya, Africa,
-            and the world, one of the key themes being Green Jobs: The
-            university will work to create jobs in the renewable energy and
-            sustainability sectors. The Green Jobs Career Fair & Conference is
-            one of the initiatives that align with the Chancellor's vision.
-          </p>
-        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#leadershipCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#leadershipCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
     <!-- End of Chancellor's message -->
 
-    <!-- About Section -->
-    <section class="about-section text-white text-center">
-      <div class="corner-decoration top-left"></div>
-      <div class="corner-decoration bottom-right"></div>
-      <!-- prettier-ignore -->
-      <span class="floating-doodle doodle-1" style="top: 15%; left: 8%">●</span>
-      <!-- prettier-ignore -->
-      <span class="floating-doodle doodle-2" style="top: 25%; right: 12%">✦</span>
-      <!-- prettier-ignore -->
-      <span class="floating-doodle doodle-3" style="bottom: 20%; left: 15%">♦</span>
-      <!-- prettier-ignore -->
-      <span class="floating-doodle doodle-4" style="bottom: 30%; right: 18%">○</span>
+<!-- About Sections Container -->
+<div class="about-sections-wrapper text-white">
+  <!-- ESA Section with Slider -->
+  <section class="about-esa-section text-center col-md-6">
+    <div class="corner-decoration top-left"></div>
+    <div class="corner-decoration bottom-right"></div>
+    <div class="overlay"></div>
+    
+    <div class="container position-relative">
+      <h2 class="section-title text-center mb-4 text-gold">About ESA</h2>
+      
+      <div class="carousel slide" id="esaCarousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#esaCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#esaCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#esaCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#esaCarousel" data-bs-slide-to="3"></button>
+        </div>
 
-      <div class="overlay"></div>
-      <div class="container position-relative">
-        <h2 class="section-title text-center mb-4 text-gold mb-4">About ESA</h2>
-        <div class="row g-4 justify-content-center">
-          <!-- Mission Card -->
-          <!-- Rework text colour -->
-          <div class="col-md-5">
+        <div class="carousel-inner">
+          <!-- About ESA Card -->
+          <div class="carousel-item active">
             <div class="card about-card">
-              <div class="card-body">
-                <h3 class="card-title">Our Mission</h3>
-                <p>
-                  The Engineering Students Association (ESA) is a professional
-                  body of students from five departments in the School of
-                  Engineering, University of Nairobi.
-                </p>
+              <div class="card-body d-flex">
+                <div class="profile-image">
+                  <img src="./logo/esa-bnw-0.png" alt="ESA Logo" class="rounded-circle">
+                </div>
+                <div class="profile-content">
+                  <h3 class="card-title">About ESA</h3>
+                  <p>The Engineering Students Association (ESA) is a professional body of students from five departments in the School of Engineering, University of Nairobi. We foster collaboration, innovation, and professional development.</p>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Additional Info Card -->
-          <div class="col-md-5">
+
+          <!-- Chairperson Card -->
+          <div class="carousel-item">
             <div class="card about-card">
-              <div class="card-body">
-                <h3 class="card-title">Who We Are</h3>
-                <p>
-                  ESA fosters collaboration, innovation, and professional
-                  development among students. Through workshops, events, and
-                  projects, we drive engineering excellence and sustainability.
-                </p>
+              <div class="card-body d-flex">
+                <div class="profile-image">
+                  <img src="./img/placeholder.jpg" alt="Chairperson" class="rounded-circle">
+                </div>
+                <div class="profile-content">
+                  <h3 class="card-title">Chairperson</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leading ESA's initiatives in promoting engineering excellence and sustainability.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vice Chair Card -->
+          <div class="carousel-item">
+            <div class="card about-card">
+              <div class="card-body d-flex">
+                <div class="profile-image">
+                  <img src="./img/placeholder.jpg" alt="Vice Chair" class="rounded-circle">
+                </div>
+                <div class="profile-content">
+                  <h3 class="card-title">Vice Chair</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Supporting ESA's mission through innovative programs and student engagement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secretary Card -->
+          <div class="carousel-item">
+            <div class="card about-card">
+              <div class="card-body d-flex">
+                <div class="profile-image">
+                  <img src="./img/placeholder.jpg" alt="Secretary" class="rounded-circle">
+                </div>
+                <div class="profile-content">
+                  <h3 class="card-title">Secretary</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Coordinating ESA's activities and maintaining effective communication.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- End of About Section -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#esaCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#esaCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Services Section -->
+  <section class="about-career-section text-center col-md-6">
+    <div class="corner-decoration top-left"></div>
+    <div class="corner-decoration bottom-right"></div>
+    <div class="overlay"></div>
+    
+    <div class="container position-relative">
+      <h2 class="section-title text-center mb-4 text-gold">Career Services</h2>
+      <div class="career-services-content">
+        <div class="logo-container mb-4">
+          <img src="./logo/tgc.png" alt="Career Services Logo" class="img-fluid">
+        </div>
+        <div class="card about-card">
+          <div class="card-body">
+            <p>The Office of Career Services at the University of Nairobi is dedicated to supporting students in their professional development journey. We provide guidance, resources, and opportunities to help students achieve their career goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
     <!-- Events Section -->
 

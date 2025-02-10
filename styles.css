@@ -667,3 +667,160 @@ footer {
   display: inline-block;
   margin-bottom: 30px;
 }
+
+/* Leadership Slider Styles */
+.leadership-slider {
+  position: relative;
+  padding: 40px 0;
+}
+
+.leadership-slider .carousel-control-prev,
+.leadership-slider .carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+.leadership-slider .carousel-control-prev-icon,
+.leadership-slider .carousel-control-next-icon {
+  background-color: rgba(19, 57, 49, 0.7);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.leadership-slider .carousel-indicators {
+  bottom: -50px;
+}
+
+.leadership-slider .carousel-indicators button {
+  background-color: #133931;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.leadership-slider .carousel-item {
+  padding: 20px 0;
+}
+
+.leadership-slider .agenda-card {
+  margin-bottom: 20px;
+}
+
+/* Ensure smooth transitions */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .leadership-slider .carousel-control-prev,
+  .leadership-slider .carousel-control-next {
+    width: 10%;
+  }
+  
+  .leadership-slider .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* About Sections Wrapper */
+.about-sections-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+  background: url("./jpeg/DSC_2249.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+/* Common styles for both sections */
+.about-esa-section,
+.about-career-section {
+  position: relative;
+  padding: 2rem;
+}
+
+/* Profile cards in slider */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-content {
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* Career Services specific styles */
+.career-services-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Carousel modifications */
+#esaCarousel .carousel-indicators {
+  bottom: -40px;
+}
+
+#esaCarousel .carousel-control-prev,
+#esaCarousel .carousel-control-next {
+  width: 10%;
+  color: #133931;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.95);
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-sections-wrapper {
+    flex-direction: column;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .card-body.d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-content {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
