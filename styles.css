@@ -719,13 +719,15 @@ footer {
 /* Profile layout */
 .about-card .card-body {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
 }
 
 .profile-image img {
@@ -763,7 +765,6 @@ footer {
   }
   
   .about-card .card-body {
-    flex-direction: column;
     text-align: center;
   }
   
@@ -771,11 +772,3 @@ footer {
     margin-bottom: 1rem;
   }
 }
-
-
-
-
-
-
-
-  
