@@ -437,48 +437,12 @@ body {
   opacity: 1;
 }
 
-/* About ESA Section */
-.about-section {
-  position: relative;
-  background: url("./jpeg/DSC_2249.jpg") no-repeat center
-    center/cover;
-  background-attachment: fixed;
-  padding: 100px 0;
-}
 
-/* Dark Overlay */
-.about-section .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
 
-/* Ensure Content is Above Overlay */
-.about-section .container {
-  position: relative;
-  z-index: 1;
-}
 
-/* About Cards */
-.about-card {
-  background: rgba(255, 255, 255, 0.9);
-  color: #133931;
-  border: none;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s ease, box -shadow 0.3s ease;
-}
 
-/* Hover Effect */
-.about-card:hover {
-  transform: scale(1.05);
-  /* box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); */
-  box-shadow: none;
-}
+
+
 
 /* Section Rounding and Spacing */
 section {
@@ -725,102 +689,93 @@ footer {
   }
 }
 
+
 /* About Sections Wrapper */
 .about-sections-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem 0;
-  background: url("./jpeg/DSC_2249.jpg") no-repeat center center/cover;
+  padding: 4rem 0;
+  background: linear-gradient(rgba(19, 57, 49, 0.8), rgba(19, 57, 49, 0.8)),
+    url("./jpeg/DSC_2249.jpg") no-repeat center center/cover;
   background-attachment: fixed;
 }
 
-/* Common styles for both sections */
+/* Common styles for about sections */
 .about-esa-section,
 .about-career-section {
-  position: relative;
+  flex: 1;
+  min-width: 300px;
   padding: 2rem;
 }
 
-/* Profile cards in slider */
+/* About cards */
+.about-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile layout */
+.about-card .card-body {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
 .profile-image {
-  width: 120px;
-  height: 120px;
-  flex-shrink: 0;
-  margin-right: 1rem;
+  width: 100px;
+  height: 100px;
 }
 
 .profile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.profile-content {
-  flex-grow: 1;
-  text-align: left;
-}
-
-/* Career Services specific styles */
-.career-services-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo-container {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
-  padding: 1rem;
-  margin-bottom: 2rem;
+}
+
+/* Career services logo */
+.logo-container {
+  width: 150px;
+  margin: 0 auto 2rem;
 }
 
 .logo-container img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
-/* Carousel modifications */
+/* Carousel controls */
 #esaCarousel .carousel-indicators {
-  bottom: -40px;
+  bottom: -3rem;
 }
 
 #esaCarousel .carousel-control-prev,
 #esaCarousel .carousel-control-next {
   width: 10%;
-  color: #133931;
 }
 
-.about-card {
-  background: rgba(255, 255, 255, 0.95);
-  margin: 1rem;
-  border-radius: 15px;
-}
-
-/* Responsive adjustments */
+/* Responsive design */
 @media (max-width: 768px) {
   .about-sections-wrapper {
     flex-direction: column;
   }
   
-  .profile-image {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .card-body.d-flex {
+  .about-card .card-body {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
   
-  .profile-content {
-    text-align: center;
-    margin-top: 1rem;
+  .profile-image {
+    margin-bottom: 1rem;
   }
 }
+
+
+
+
+
+
+
+  
