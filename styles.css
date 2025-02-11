@@ -865,7 +865,8 @@ footer {
 .exhibitors-track {
   display: flex;
   gap: 20px;
-  animation: moveExhibitors 25s linear infinite;
+  animation: moveExhibitors 40s linear infinite;
+  width: max-content;
 }
 
 .exhibitor-img {
@@ -876,9 +877,10 @@ footer {
 
 @keyframes moveExhibitors {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
+

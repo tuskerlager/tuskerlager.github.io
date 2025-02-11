@@ -36,8 +36,16 @@
         <div class="logo"><img src="./logo/esa-bnw-0.png" alt="ESA LOGO" class="img-fluid" style="height: 70px" /></div>
         <div class="logo">
           <img
-            src="./logo/tgc.png"
+            src="./logo/tgc-white.png"
             alt="TGC LOGO"
+            class="img-fluid"
+            style="height: 70px"
+          />
+        </div>
+        <div class="logo">
+          <img
+            src="./logo/OCSLogo.png"
+            alt="OCS Logo"
             class="img-fluid"
             style="height: 70px"
           />
@@ -239,7 +247,7 @@
                   <div class="card-body">
                     <div class="profile-image">
                       <img
-                        src="./img/esa-logo.jpg"
+                        src="./dsc/esa-logo.jpg"
                         alt="ESA Logo"
                         class="rounded-circle"
                       />
@@ -285,7 +293,7 @@
                   <div class="card-body">
                     <div class="profile-image">
                       <img
-                        src="./dsc/caleb.jpeg"
+                        src="./dsc/caleb-oira.jpeg"
                         alt="Vice Chair"
                         class="rounded-circle"
                       />
@@ -311,7 +319,7 @@
                   <div class="card-body">
                     <div class="profile-image">
                       <img
-                        src="./dsc/drew.jpeg"
+                        src="./dsc/drew-kiongo.jpeg"
                         alt="Secretary General"
                         class="rounded-circle"
                       />
@@ -489,16 +497,31 @@
         <div class="exhibitors-track">
           <!-- Dynamically Loaded Images -->
           <script>
-            const exhibitorsContainer = document.querySelector('.exhibitors-track');
-            const imageFolder = "./exhibitors/";
-            const imageNames = ["nairobi-city-county.jpg", "uzuzi-hub.png", "smachs-fdn.jpg", "Maramoja.jpg", "burn-jiko.png", "pmi-kenya.png", "acca.png", "ebee.jpg", "trufoods.jpg", "basf.jpeg", "vivo-energy.jpg", "esak.jpg", "kura.png", "giz.png", "Raynow-Energy.jpg", "shortlist.png", "teach-for-kenya.jpg", "cr-sanjiu.png", "tana.jpg", "impact-hub.png", "bat.jpg", "ministry-labour-social-protection.jpg", "national-employment.jpg", "rotary-intl.jpg", "unilever.png", "solar-africa.jpg", "prudential-life.jpg", "rcmrd.png", "bcg.jpg", "kengen.png", "kenya-power.jpg"];
-    
-            imageNames.forEach((image) => {
-              const img = document.createElement("img");
-              img.src = imageFolder + image;
-              img.classList.add("exhibitor-img");
-              img.alt = "Exhibitor";
-              exhibitorsContainer.appendChild(img);
+            document.addEventListener("DOMContentLoaded", function () {
+              const exhibitorsContainer = document.querySelector(".exhibitors-track");
+              const imageFolder = "./exhibitors/";
+              const imageNames = ["nairobi-city-county.jpg", "uzuzi-hub.png", "smachs-fdn.jpg", "Maramoja.jpg", "burn-jiko.png", "pmi-kenya.png", "acca.png", "ebee.jpg", "trufoods.jpg", "basf.jpeg", "vivo-energy.jpg", "esak.jpg", "kura.png", "giz.png", "Raynow-Energy.jpg", "shortlist.png", "teach-for-kenya.jpg", "cr-sanjiu.png", "tana.jpg", "impact-hub.png", "bat.jpg", "ministry-labour-social-protection.jpg", "national-employment.jpg", "rotary-intl.jpg", "unilever.png", "solar-africa.jpg", "prudential-life.jpg", "rcmrd.png", "bcg.jpg", "kengen.png", "kenya-power.jpg"];
+       
+              function loadExhibitorImages() {
+                exhibitorsContainer.innerHTML = ""; // Clear previous content
+                let images = [];
+        
+                // Load images twice for seamless looping
+                for (let i = 0; i < 2; i++) {
+                  imageNames.forEach((image) => {
+                    const img = document.createElement("img");
+                    img.src = imageFolder + image;
+                    img.classList.add("exhibitor-img");
+                    img.alt = "Exhibitor";
+                    images.push(img);
+                  });
+                }
+        
+                // Append images to the track
+                images.forEach((img) => exhibitorsContainer.appendChild(img));
+              }
+        
+              loadExhibitorImages();
             });
           </script>
         </div>
