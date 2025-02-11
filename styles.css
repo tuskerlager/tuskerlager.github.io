@@ -776,6 +776,22 @@ footer {
   padding: 2rem;
 }
 
+.about-career-section .profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 20px;
+}
+
+.about-career-section .profile-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
 /* About cards */
 .about-card {
   background: rgba(255, 255, 255, 0.95);
